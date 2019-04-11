@@ -6,4 +6,5 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(201904Algorithm
         #1024.cpp
         #1427.cpp
-        1181.cpp)
+        #1181.cpp
+        1038.cpp)
