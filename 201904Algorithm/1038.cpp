@@ -8,12 +8,31 @@ int main() {
     int N;
     scanf("%d", &N);
 
-    if(N==0) {
+    int n=0, count=0;
+
+    /*0 1 2 3 4 5 6 7 8 9
+10
+21 20
+32 31 30
+...
+98	 90
+
+210
+321 320/ 310
+432 431 430/ 421 420/ 410
+...
+987~980/976~970/.../910 (8+...+1)
+
+3210
+4321 4320/4310/4210
+     */
+
+    /*if(N==0) {
         printf("0");
         return 0;
     }
 
-    int n=0, count=0;
+    int n=N, count=0;
     while(count<N) {
         int copy=n, temp=n%10, diff=temp;
         copy/=10;
@@ -37,7 +56,7 @@ int main() {
         printf("%d", n-1);
     } else {
         printf("-1");
-    }
+    }*/
 
     return 0;
 }
