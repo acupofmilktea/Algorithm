@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/az91t/CLionProjects/201905Algorithm/1157.cpp
+C:/Users/az91t/CLionProjects/201905Algorithm/1260.cpp
 iostream
 -
-string
+vector
+-
+queue
+-
+algorithm
 -
 

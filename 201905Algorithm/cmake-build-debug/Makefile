@@ -122,32 +122,32 @@ depend:
 	$(MAKE) -f CMakeFiles\201905Algorithm.dir\build.make CMakeFiles/201905Algorithm.dir/build
 .PHONY : 201905Algorithm/fast
 
-1157.obj: 1157.cpp.obj
+1260.obj: 1260.cpp.obj
 
-.PHONY : 1157.obj
+.PHONY : 1260.obj
 
 # target to build an object file
-1157.cpp.obj:
-	$(MAKE) -f CMakeFiles\201905Algorithm.dir\build.make CMakeFiles/201905Algorithm.dir/1157.cpp.obj
-.PHONY : 1157.cpp.obj
+1260.cpp.obj:
+	$(MAKE) -f CMakeFiles\201905Algorithm.dir\build.make CMakeFiles/201905Algorithm.dir/1260.cpp.obj
+.PHONY : 1260.cpp.obj
 
-1157.i: 1157.cpp.i
+1260.i: 1260.cpp.i
 
-.PHONY : 1157.i
+.PHONY : 1260.i
 
 # target to preprocess a source file
-1157.cpp.i:
-	$(MAKE) -f CMakeFiles\201905Algorithm.dir\build.make CMakeFiles/201905Algorithm.dir/1157.cpp.i
-.PHONY : 1157.cpp.i
+1260.cpp.i:
+	$(MAKE) -f CMakeFiles\201905Algorithm.dir\build.make CMakeFiles/201905Algorithm.dir/1260.cpp.i
+.PHONY : 1260.cpp.i
 
-1157.s: 1157.cpp.s
+1260.s: 1260.cpp.s
 
-.PHONY : 1157.s
+.PHONY : 1260.s
 
 # target to generate assembly for a file
-1157.cpp.s:
-	$(MAKE) -f CMakeFiles\201905Algorithm.dir\build.make CMakeFiles/201905Algorithm.dir/1157.cpp.s
-.PHONY : 1157.cpp.s
+1260.cpp.s:
+	$(MAKE) -f CMakeFiles\201905Algorithm.dir\build.make CMakeFiles/201905Algorithm.dir/1260.cpp.s
+.PHONY : 1260.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... 201905Algorithm
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... 1157.obj
-	@echo ... 1157.i
-	@echo ... 1157.s
+	@echo ... 1260.obj
+	@echo ... 1260.i
+	@echo ... 1260.s
 .PHONY : help
 
 

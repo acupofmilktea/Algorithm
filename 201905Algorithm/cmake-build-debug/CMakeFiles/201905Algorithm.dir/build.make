@@ -56,27 +56,27 @@ include CMakeFiles/201905Algorithm.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/201905Algorithm.dir/flags.make
 
-CMakeFiles/201905Algorithm.dir/1157.cpp.obj: CMakeFiles/201905Algorithm.dir/flags.make
-CMakeFiles/201905Algorithm.dir/1157.cpp.obj: ../1157.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\az91t\CLionProjects\201905Algorithm\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/201905Algorithm.dir/1157.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\201905Algorithm.dir\1157.cpp.obj -c C:\Users\az91t\CLionProjects\201905Algorithm\1157.cpp
+CMakeFiles/201905Algorithm.dir/1260.cpp.obj: CMakeFiles/201905Algorithm.dir/flags.make
+CMakeFiles/201905Algorithm.dir/1260.cpp.obj: ../1260.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\az91t\CLionProjects\201905Algorithm\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/201905Algorithm.dir/1260.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\201905Algorithm.dir\1260.cpp.obj -c C:\Users\az91t\CLionProjects\201905Algorithm\1260.cpp
 
-CMakeFiles/201905Algorithm.dir/1157.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/201905Algorithm.dir/1157.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\az91t\CLionProjects\201905Algorithm\1157.cpp > CMakeFiles\201905Algorithm.dir\1157.cpp.i
+CMakeFiles/201905Algorithm.dir/1260.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/201905Algorithm.dir/1260.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\az91t\CLionProjects\201905Algorithm\1260.cpp > CMakeFiles\201905Algorithm.dir\1260.cpp.i
 
-CMakeFiles/201905Algorithm.dir/1157.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/201905Algorithm.dir/1157.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\az91t\CLionProjects\201905Algorithm\1157.cpp -o CMakeFiles\201905Algorithm.dir\1157.cpp.s
+CMakeFiles/201905Algorithm.dir/1260.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/201905Algorithm.dir/1260.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\az91t\CLionProjects\201905Algorithm\1260.cpp -o CMakeFiles\201905Algorithm.dir\1260.cpp.s
 
 # Object files for target 201905Algorithm
 201905Algorithm_OBJECTS = \
-"CMakeFiles/201905Algorithm.dir/1157.cpp.obj"
+"CMakeFiles/201905Algorithm.dir/1260.cpp.obj"
 
 # External object files for target 201905Algorithm
 201905Algorithm_EXTERNAL_OBJECTS =
 
-201905Algorithm.exe: CMakeFiles/201905Algorithm.dir/1157.cpp.obj
+201905Algorithm.exe: CMakeFiles/201905Algorithm.dir/1260.cpp.obj
 201905Algorithm.exe: CMakeFiles/201905Algorithm.dir/build.make
 201905Algorithm.exe: CMakeFiles/201905Algorithm.dir/linklibs.rsp
 201905Algorithm.exe: CMakeFiles/201905Algorithm.dir/objects1.rsp
