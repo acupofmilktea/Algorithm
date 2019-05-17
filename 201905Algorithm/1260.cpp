@@ -3,34 +3,63 @@
 //
 
 #include <iostream>
-#include <vector>
-#include <queue>
 #include <algorithm>
+#include <stack>
+#include <queue>
+#include <vector>
 using namespace std;
 
-void depthFistSearch(vector<int> graph[], bool* check, int start) {
-    cout << start << " ";
+vector<int> graph[1001];
+stack<int> stkList;
+queue<int> queList;
+bool check1[1001], check2[1001];
 
-    int count = 0;
-    for (int i = 0; i < graph[start].size(); i++) {
-        start = graph[start][i];
-        if (!check[start]) {
-            check[start] = true;
-            depthFistSearch(graph, check, start);
-        }
+void depthFirstSearch(int start) {
+    cout<<start<<" ";
+    M--;
+
+    if(!stkList.empty()) {
+        stkList.pop();
     }
+
+
+
+    if(stkList.empty()||M==0) {
+        cout<<"\n";
+        return;
+    }
+
+    depthFirstSearch(N, M, stkList.top());
 }
 
-void breadthFirstSearch(vector<int> graph[], bool* check, int start) {
+void breadthFirstSearch(int N, int M, int start) {
     cout<<start<<" ";
+    M--;
 
+    if(!queList.empty()) {
+        queList.pop();
+    }
+
+    for(int i=1; i<=N; i++) {
+        if(graph[start][i]>0) {
+            queList.push(i);
+            graph[start][i]--;
+            graph[i][start]--;
+        }
+    }
+
+    if(queList.empty()||M==0) {
+        cout<<"\n";
+        return;
+    }
+
+    breadthFirstSearch(N, M, queList.front());
 }
 
 int main() {
     int N, M, V;//정점개수, 간선 개수, 탐색시작번호
     cin>>N>>M>>V;
 
-    vector<int> graph[N+1];
     for(int i=0; i<M; i++) {
         int p, q;
         cin>>p>>q;
@@ -38,12 +67,9 @@ int main() {
         graph[q].push_back(p);
     }
 
-    for(int i=1; i<N; i++) {
+    for(int i=1; i<=N; i++) {
         sort(graph[i].begin(), graph[i].end());
     }
-
-    bool check[N];
-    depthFistSearch(graph, check, V);
 
     return 0;
 }
