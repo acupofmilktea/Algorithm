@@ -5,16 +5,20 @@
 #include <iostream>
 using namespace std;
 
-int numberOfBroken(int n, int number[]){
-    int digit, count=0;
+int isBroken(int n, int number[]){
+    if(n==0) {
+        return 1;
+    }
+
+    int digit;
     while(n!=0) {
         digit=n%10;
         if(number[digit]==-1) {
-            count++;
+            return 1;
         }
         n/=10;
     }
-    return count;
+    return 0;
 }
 
 int numberOfDigit(int n) {
@@ -46,27 +50,32 @@ int main() {
         }//-1이면 고장난 버튼
     }
 
-    if((N>=97&&N<=103)||M==10) {
+    if((N>97&&N<103)||M==10) {
         cout<<abs(N-channel)<<"\n";
         return 0;
     }
 
     int goal1=N, goal2=N;
-    while(numberOfBroken(goal1, number)!=0
-    &&numberOfBroken(goal2, number)!=0) {
+    while(isBroken(goal1, number)!=0
+    &&isBroken(goal2, number)!=0) {
         goal1++;
         if(goal2>0) {
             goal2--;
         }
-        //cout<<"ng1: "<<numberOfBroken(goal1,number)<<" ng2: "<<numberOfBroken(goal2,number)<<"\n";
     }
-    //cout<<"goal1: "<<goal1<<" goal2: "<<goal2<<"\n";
+
     int min=goal1;
-    if(numberOfBroken(goal2, number)==0) {
+    if(isBroken(goal2,number)==0) {
         min=goal2;
     }
-    //cout<<min<<" (min) "<<numberOfDigit(min)<<"\n";
-    int count=numberOfDigit(min)+abs(N-min);
+
+    int count;
+    if(min==100) {
+        count=abs(N-min);
+    } else {
+        count=numberOfDigit(min)+abs(N-min);
+    }
+
     cout<<count<<"\n";
 
     return 0;

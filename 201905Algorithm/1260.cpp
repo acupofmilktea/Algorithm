@@ -22,8 +22,6 @@ void depthFirstSearch(int start) {
         stkList.pop();
     }
 
-
-
     if(stkList.empty()||M==0) {
         cout<<"\n";
         return;
