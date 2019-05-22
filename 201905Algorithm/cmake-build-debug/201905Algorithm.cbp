@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/az91t/CLionProjects/201905Algorithm/10253.cpp">
+		<Unit filename="C:/Users/az91t/CLionProjects/201905Algorithm/main.cpp">
 			<Option target="201905Algorithm"/>
 		</Unit>
 		<Unit filename="C:/Users/az91t/CLionProjects/201905Algorithm/CMakeLists.txt">
