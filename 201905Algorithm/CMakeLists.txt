@@ -18,4 +18,7 @@ add_executable(201905Algorithm
         #11718.cpp
         #11719.cpp
         #11720.cpp
+        #1463.cpp
+        #9095.cpp
+        #11057.cpp
         )
