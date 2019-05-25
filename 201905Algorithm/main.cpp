@@ -1,20 +1,37 @@
 #include <iostream>
-int dp[1001];
-
-int tile(int n) {
-    if(n==1) return 1;
-    if(n==2) return 3;
-    if(dp[n]!=-1) return dp[n];
-    dp[n]=(tile(n-2)*2+tile(n-1))%10007;
-    //n-2의 경우에 오른쪽에 타일 두개, n-1경우에 오른쪽에 타일 하나
-    //타일 두 개 놓는 경우만 2가지 경우(2x2, 1x2)
-    return dp[n];
-}
-
+#include <algorithm>
 int main() {
-    int n;
+    int n, i, j, k;
     scanf("%d", &n);
-    std::fill(dp, dp+1001, -1);
-    printf("%d", tile(n));
+
+    int series[1001];
+    for(i=0; i<n; i++) {
+        scanf("%d", &series[i]);
+    }
+
+    int dp[1001], max=0, minIdx, next;
+    std::fill(dp, dp+1001, 0);
+    for(i=0; i<n; i++) {
+        minIdx=i;
+        dp[minIdx]=1;
+        for(j=minIdx; j<n-1; j++) {
+            if(series[j+1]>series[minIdx]) {
+                next=j+1;
+                for(k=next; k<n-1; k++) {
+                    if(series[next]>series[k+1]&&series[k+1]>series[minIdx])
+                        next=k+1;
+                }
+                dp[next]=dp[minIdx]+1;
+                minIdx=next;
+                continue;
+            }
+        }
+
+        if(dp[minIdx]>max)
+            max=dp[minIdx];
+        std::cout<<"dp[minIdx]: "<<dp[minIdx]<<"\n";
+    }
+
+    printf("%d", max);
     return 0;
 }
