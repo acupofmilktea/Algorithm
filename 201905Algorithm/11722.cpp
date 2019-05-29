@@ -2,6 +2,10 @@
 // Created by az91t on 2019-05-29.
 //
 
+//
+// Created by az91t on 2019-05-29.
+//
+
 #include <iostream>
 using namespace std;
 int series[1001], dp[1001]={0,};

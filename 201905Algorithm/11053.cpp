@@ -17,7 +17,7 @@ int main() {
     for(i=1; i<N; i++) {
         next=i;
         for(j=next+1; j<N+1; j++) {
-            if(series[j]<series[next]) {
+            if(series[j]>series[next]) {
                 dp[j]=max(dp[j], dp[next]+1);
             }
         }
