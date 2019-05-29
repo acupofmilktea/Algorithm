@@ -13,12 +13,11 @@ int main() {
         dp[i]=1;
     }
     if(N==1) { puts("1"); return 0; }
-    int next, maxLength=1;
+    int maxLength=1;
     for(i=1; i<N; i++) {
-        next=i;
-        for(j=next+1; j<N+1; j++) {
-            if(series[j]>series[next]) {
-                dp[j]=max(dp[j], dp[next]+1);
+        for(j=i+1; j<N+1; j++) {
+            if(series[j]>series[i]) {
+                dp[j]=max(dp[j], dp[i]+1);
             }
         }
     }

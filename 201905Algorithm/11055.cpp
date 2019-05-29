@@ -13,10 +13,9 @@ int main() {
     }
     int next, maxSum=series[i];
     for(i=1; i<N; i++) {
-        next=i;
-        for(j=next+1; j<N+1; j++) {
-            if(series[j]>series[next]) {
-                dp[j]=std::max(dp[j], dp[next]+series[j]);
+        for(j=i+1; j<N+1; j++) {
+            if(series[j]<series[i]) {
+                dp[j]=max(dp[j], dp[i]+1);
             }
         }
     }
