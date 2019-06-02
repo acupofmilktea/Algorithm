@@ -1,29 +1,26 @@
-//
-// Created by az91t on 2019-05-29.
-//
-
 #include <iostream>
+#define MAX 10002
 using namespace std;
-int series[1001], dp[1001]={0,};
 int main() {
-    int N, i, j;
-    cin>>N;
-    for(i=1; i<=N; i++) {
-        cin>>series[i];
-        dp[i]=1;
+    int n;
+    cin>>n;
+    int cost[MAX]={0,}, dp[MAX]={0,};
+    for(int i=1; i<=n; i++) {
+        cin>>cost[i];
+        dp[i]=cost[i];
     }
-    if(N==1) { puts("1"); return 0; }
-    int maxLength=1;
-    for(i=1; i<N; i++) {
-        for(j=i+1; j<N+1; j++) {
-            if(series[j]>series[i]) {
-                dp[j]=max(dp[j], dp[i]+1);
-            }
-        }
+    if(n==1) {
+        cout<<cost[1];
+        return 0;
     }
-    for(i=1; i<N+1; i++) {
-        if(dp[i]>maxLength) { maxLength = dp[i]; }
+    if(n==2) {
+        cout<<cost[1]+cost[2];
+        return 0;
     }
-    cout<<maxLength<<endl;
+    for(int i=4; i<=n+1; i++) {
+        dp[i]=max(dp[i-3]+max(cost[i-1], cost[i-2]+cost[i]), dp[i-2]+cost[i-1]);
+        cout<<dp[i]<<"\n";
+    }
+    cout<<dp[n+1];
     return 0;
 }
