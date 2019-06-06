@@ -12,12 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3193f941-2f4d-49be-a4b0-633536f8d4e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../201906Algorithm/2156.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/201905Algorithm.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/201905Algorithm.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/201905Algorithm.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/201905Algorithm.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/201905Algorithm.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/201905Algorithm.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../201906Algorithm/.idea/201906Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../201906Algorithm/.idea/201906Algorithm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../201906Algorithm/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../201906Algorithm/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../201906Algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../201906Algorithm/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -180,7 +177,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="936" />
     <option name="width" value="998" />
     <option name="height" value="1040" />
@@ -268,12 +265,12 @@
       <workItem from="1559109323095" duration="22941000" />
       <workItem from="1559180870889" duration="7455000" />
       <workItem from="1559371859567" duration="15434000" />
-      <workItem from="1559745216626" duration="908000" />
+      <workItem from="1559745216626" duration="1089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229346000" />
+    <option name="totallyTimeSpent" value="229527000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -294,7 +291,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32904148" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49872774" weight="0.2832618" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.28755364" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.28755364" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32904148" />

@@ -18,6 +18,7 @@ int main() {
         return 0;
     }
     dp[2]=dp[1]+cost[2];
+    //1011, 0101, 0010만 고려해주면 된다(안 밟는 경우)
     for(int i=3; i<=n; i++) {
         dp[i]=max(dp[i-3]+cost[i-1]+cost[i], max(dp[i-1], dp[i-2]+cost[i]));
     }
