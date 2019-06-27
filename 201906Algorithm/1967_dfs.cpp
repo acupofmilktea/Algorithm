@@ -1,3 +1,7 @@
+//
+// Created by az91t on 2019-06-27.
+//
+//가장 긴 지름 찾고 거기에서부터 긴 지름 찾으면 된다
 #include <iostream>
 #include <vector>
 #define MAX 10001

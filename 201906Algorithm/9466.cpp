@@ -1,55 +1,63 @@
 //
-// Created by az91t on 2019-06-12.
+// Created by az91t on 2019-06-15.
 //
 
 #include <iostream>
-#include <queue>
+#include <vector>
 #define MAX 100001
 using namespace std;
-int graph[MAX];
-bool check[MAX];
-void dfs(queue<int> q, int start){
-    q.push(start);
-    if(check[start]){
-        while(!q.empty()){
-            q.pop();
-        }
-        return;
-    }
+int graph[MAX], n;
+int check[MAX]={0,};
+vector<int> v;
+void dfs(int start){
+    v.push_back(start);
     int next=graph[start];
-    if(next==q.front()){
-        while(!q.empty()){
-            check[q.front()]=true;
-            q.pop();
+    if(check[next]!=0){
+        if(v.front()!=next)
+            graph[v.front()]=-1;
+        int len=check[next];
+        while(v.size()>=len){
+            check[v.back()]=0;
+            graph[v.back()]=0;//이미 사이클 포함
+            v.pop_back();
+        }
+        while(!v.empty()){
+            check[v.back()]=0;
+            v.pop_back();
         }
         return;
     }
-    dfs(q, next);
+    if(graph[next]==0||graph[next]==-1){//이미 사이클이 형성된 곳이나 불가능한 곳
+        graph[v.front()]=-1;
+        while(!v.empty()){
+            check[v.back()]=0;
+            v.pop_back();
+        }
+        return;
+    }
+    check[next]=check[start]+1;
+    dfs(next);
 }
 int main() {
     int T;
-    cin>>T;
+    scanf("%d", &T);
     while(T>0){
-        int n;
-        cin>>n;
+        scanf("%d", &n);
         for(int i=1; i<=n; i++){
-            cin>>graph[i];
+            scanf("%d", &graph[i]);
         }
-        fill(check, check+(n+1), false);
         for(int i=1; i<=n; i++){
-            queue<int> q;
-            dfs(q,i);
-            for(int j=1; j<=n; j++){
-                cout<<check[i]<<" ";
-            }
-            cout<<"\n";
+            if(graph[i]==0)
+                continue;
+            check[i]=1;
+            dfs(i);
         }
         int cnt=0;
         for(int i=1; i<=n; i++){
-            if(!check[i])
+            if(graph[i]==-1)
                 cnt++;
         }
-        cout<<cnt<<"\n";
+        printf("%d\n", cnt);
         T--;
     }
     return 0;
