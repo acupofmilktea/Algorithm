@@ -1,3 +1,7 @@
+//
+// Created by az91t on 2019-06-28.
+//
+//왼쪽부터 차례대로
 #include <iostream>
 #include <algorithm>
 using namespace std;
