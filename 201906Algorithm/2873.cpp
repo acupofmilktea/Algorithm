@@ -1,3 +1,8 @@
+//
+// Created by az91t on 2019-06-29.
+//
+//min인 지점을 알아내서 피해서 가게하도록 해야함
+//짝수*짝수일 때만 고치면 된다
 #include <iostream>
 using namespace std;
 int main(){
