@@ -12,10 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4cb36b5-4df9-44a7-afa6-a97cecb50db1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1018.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1451.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1476.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1697.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../201908Algorithm/.idea/201908Algorithm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../201908Algorithm/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../201908Algorithm/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../201908Algorithm/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../201908Algorithm/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../201908Algorithm/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../201908Algorithm/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../201908Algorithm/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/201907Algorithm.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/201907Algorithm.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/201907Algorithm.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/201907Algorithm.dir/main.cpp.obj" afterDir="false" />
@@ -40,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            <state relative-caret-position="57">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -49,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1697.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="266">
               <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
             </state>
           </provider>
@@ -133,7 +145,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="976" />
+    <option name="x" value="975" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -198,17 +210,20 @@
       <workItem from="1562222460088" duration="8004000" />
       <workItem from="1562301961159" duration="6885000" />
       <workItem from="1562330897647" duration="2199000" />
+      <workItem from="1565080678834" duration="599000" />
+      <workItem from="1565599781436" duration="2744000" />
+      <workItem from="1565602594783" duration="80000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17088000" />
+    <option name="totallyTimeSpent" value="20511000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="781" y="0" width="768" height="832" extended-state="0" />
+    <frame x="780" y="0" width="768" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2740113" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29943502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -245,6 +260,13 @@
     <entry file="file://$PROJECT_DIR$/9095.cpp" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1697.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/1451.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -291,17 +313,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1697.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="57">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
